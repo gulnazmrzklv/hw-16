@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  height: 500px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "header main navigation"
+    "footer footer footer";
+}
+.header {
+  background-color: grey;
+  grid-area: header;
+  border-right: 5px dashed red;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  border: 15px;
+}
+.post {
+  border: 3px dashed rgb(93, 93, 241);
+  background-color: rgb(77, 230, 123);
+}
+.navigation {
+  background-color: grey;
+  grid-area: navigation;
+  border-left: 5px dashed red;
+}
+.footer {
+  background-color: grey;
+  grid-area: footer;
+  border-top: 5px dashed red;
+}
